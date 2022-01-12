@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:text="4 Groups Dialog"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_gunars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gunārs Božis"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+    <CheckBox
+        android:id="@+id/cb_janis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jānis Jansons"
+        app:layout_constraintTop_toBottomOf="@id/cb_gunars"/>
+
+    <CheckBox
+        android:id="@+id/cb_normunds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normunds Vējiņš"
+        app:layout_constraintTop_toBottomOf="@id/cb_janis"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_normunds" />
+
+    <Button
+        android:id="@+id/bt_ok_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_normunds" />
+
+    <Button
+        android:id="@+id/bt_close_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:stateListAnimator="@null"
+        android:text="Close"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/cb_normunds" />
+</androidx.constraintlayout.widget.ConstraintLayout>
